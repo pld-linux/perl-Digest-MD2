@@ -1,16 +1,21 @@
+#
+# Conditional build:
+%bcond_without	tests	# don't perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD2
 Summary:	Digest::MD2 Perl module - MD2 digest algorithm implementation
 Summary(pl):	Modu³ perla Digest::MD2 - implementacja algorytmu skrótu MD2
 Name:		perl-Digest-MD2
-Version:	2.02
+Version:	2.03
 Release:	1
-License:	Artistic or GPL
+# same as perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b3bf08f751e55d59155983d3021afb90
-BuildRequires:	perl-devel >= 5.6
+# Source0-md5:	feecf9faa1b0a499a48fce214a309a78
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,7 +39,10 @@ opisany w RFC 1319.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
