@@ -5,13 +5,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD2
-Summary:	Digest::MD2 Perl module - MD2 digest algorithm implementation
-Summary(pl):	Modu³ Perla Digest::MD2 - implementacja algorytmu skrótu MD2
+Summary:	Digest::MD2 - MD2 digest algorithm implementation
+Summary(pl):	Digest::MD2 - implementacja algorytmu skrótu MD2
 Name:		perl-Digest-MD2
 Version:	2.03
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	feecf9faa1b0a499a48fce214a309a78
