@@ -6,7 +6,7 @@
 %define		pdir	Digest
 %define		pnam	MD2
 Summary:	Digest::MD2 Perl module - MD2 digest algorithm implementation
-Summary(pl):	Modu³ perla Digest::MD2 - implementacja algorytmu skrótu MD2
+Summary(pl):	Modu³ Perla Digest::MD2 - implementacja algorytmu skrótu MD2
 Name:		perl-Digest-MD2
 Version:	2.03
 Release:	1
