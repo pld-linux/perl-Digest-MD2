@@ -6,7 +6,7 @@
 %define		pdir	Digest
 %define		pnam	MD2
 Summary:	Digest::MD2 - MD2 digest algorithm implementation
-Summary(pl):	Digest::MD2 - implementacja algorytmu skrÛtu MD2
+Summary(pl.UTF-8):   Digest::MD2 - implementacja algorytmu skr√≥tu MD2
 Name:		perl-Digest-MD2
 Version:	2.03
 Release:	1
@@ -26,11 +26,11 @@ takes as input a message of arbitrary length and produces as output a
 128-bit "fingerprint" or "message digest" of the input. The algorithm
 is described in RFC 1319.
 
-%description -l pl
-Modu≥ Digest::MD2 pozwala na uøywanie algorytmu skrÛtu MD2 firmy RSA
+%description -l pl.UTF-8
+Modu≈Ç Digest::MD2 pozwala na u≈ºywanie algorytmu skr√≥tu MD2 firmy RSA
 Data Security Inc. w programach perlowych. Algorytm przyjmuje na
-wej∂ciu tekst o dowolnej d≥ugo∂ci, a produkuje na wyj∂ciu 128-bitowy
-"odcisk palca" lub "skrÛt" informacji wej∂ciowej. Algorytm jest
+wej≈õciu tekst o dowolnej d≈Çugo≈õci, a produkuje na wyj≈õciu 128-bitowy
+"odcisk palca" lub "skr√≥t" informacji wej≈õciowej. Algorytm jest
 opisany w RFC 1319.
 
 %prep
