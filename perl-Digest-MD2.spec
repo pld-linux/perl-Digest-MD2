@@ -60,6 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Digest/MD2.pm
 %dir %{perl_vendorarch}/auto/Digest/MD2
-%{perl_vendorarch}/auto/Digest/MD2/MD2.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/MD2/MD2.so
 %{_mandir}/man3/*
