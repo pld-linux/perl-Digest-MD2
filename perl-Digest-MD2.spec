@@ -8,13 +8,13 @@
 Summary:	Digest::MD2 - MD2 digest algorithm implementation
 Summary(pl.UTF-8):	Digest::MD2 - implementacja algorytmu skrótu MD2
 Name:		perl-Digest-MD2
-Version:	2.03
-Release:	14
+Version:	2.04
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Digest/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	feecf9faa1b0a499a48fce214a309a78
+# Source0-md5:	cdb34485ef5c345f40d8aae016a00ff6
 URL:		http://search.cpan.org/dist/Digest-MD2/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
