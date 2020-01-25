@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD2
 Summary:	Digest::MD2 - MD2 digest algorithm implementation
